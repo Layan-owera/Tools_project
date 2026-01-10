@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>System Dashboard - v1.0</title>
+    <meta charset="UTF-8">
+    <title>Customer Feedback - SCRUM-18</title>
     <style>
-        body { font-family: sans-serif; background-color: #eef2f3; text-align: center; }
-        .container { border: 2px solid #333; margin: 50px auto; width: 50%; padding: 20px; background: white; }
-        .status { color: red; font-weight: bold; }
+        body { font-family: sans-serif; background-color: #f9f9f9; padding: 20px; }
+        .feedback-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        h2 { color: #333; }
+        label { display: block; margin-top: 10px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+        .submit-btn { background-color: #0052cc; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-top: 15px; }
+        .submit-btn:hover { background-color: #003d99; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Management System - v1.0</h1>
-        <p>System Status: <span class="status">Maintenance Required</span></p>
-        <p>This is the initial code for our project before any updates.</p>
-    </div>
+
+<div class="feedback-box">
+    <h2>Customer Feedback</h2>
+    <p>We value your opinion on our Art Marketplace.</p>
+    
+    <form>
+        <label>How would you rate us? (1-5)</label>
+        <input type="number" min="1" max="5" placeholder="5">
+        
+        <label>Your Comments:</label>
+        <textarea rows="4" placeholder="Tell us what you think..."></textarea>
+        
+        <button type="button" class="submit-btn">Submit Rating</button>
+    </form>
+</div>
+
 </body>
 </html>
