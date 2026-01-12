@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .upload-container {
+      width: 320px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 15px;
+    }
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="upload-container">
+    <h2>Upload CV</h2>
+
+    <form>
+      <input type="file" name="cvFile" />
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
